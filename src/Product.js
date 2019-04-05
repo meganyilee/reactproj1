@@ -14,7 +14,7 @@ class Product extends React.Component {
         //
         if (this.state.count > this.props.limit) {
             alert("There are too many " + this.props.productName + " in your cart!")
-        } else if (this.props.limit == 0) {
+        } else if (this.props.limit === 0) {
             alert("This item is out of stock!")
         } else {
             this.setState({count: this.state.count + 1});
